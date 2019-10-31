@@ -1,1 +1,13 @@
-<h1>HOLAA</h1>
+{{#if name}} 
+
+<h1>Hola {{name}}</h1>
+{{else}}
+<div class="btn-container">
+    {{!-- <a class="btn btn-lg btn-primary" href="/?name=Julio">Julio</a>
+    <a class="btn btn-lg btn-primary" href="/?name=Carlos">Carlos</a> --}}
+
+    <a class="btn btn-lg btn-primary" href="/users/Julio">Julio</a>
+    <a class="btn btn-lg btn-primary" href="/users/Carlos">Carlos</a>
+</div>
+
+{{/if}}
